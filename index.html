@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="container">
+    <div class="header">
+        <div class="mobile-switcher">
+            <i class="fas fa-users-cog"></i>
+            <div class="mobile-switcher-options">
+                <a href="#">USER</a>
+                <a href="#">ADMIN</a>
+            </div>
+        </div>
+        <div class="switcher"><a href="#">USER</a> | <a href="#">ADMIN</a></div>
+        <div class="header-name">MENU</div>
+        <div class="check-out">
+            <i id="receipt" class="fas fa-receipt" onclick="openOrders()"></i>
+            <div id="item-count"></div>
+        </div>
+    </div>
+    <div id="item-section">
+    </div>
+    <div style="display: none;" id="orders">
+        <div class="orders-header">ORDERS</div>
+        <div id="all-orders">
+        </div>
+        <div class="line"></div>
+        <div class="subtotal">SUBTOTAL: $<div id="subtotal-amount">0.00</div></div>
+        <div class="salestax">TAX: $<div id="tax-amount">0.00</div></div>
+        <div class="total">TOTAL: $<div id="total-amount">0.00</div></div>
+        <div class="checkout"><div class="checkout-button">CHECKOUT</div></div>
+    </div>
+    <div style="display: block;" id="add-item">
+        
+    </div>
+</div>
+    <script src="main.js"></script>
+</body>
+</html>
